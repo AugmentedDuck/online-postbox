@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/style.css">
+  <title>AugmentedDuck | Submit Ideas</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="https://augmentedduck.github.io">HOME</a></li>
+            </ul>
+        </nav>
+        <h1 class="title-name">augmentedDuck</h1>
+    </header>
+
+    <section class="content-section container">
+        <h1 class="form-title">Submit Your Idea</h1>
+        <form id="ideaForm">
+            <div class="form-input-group">
+                <label for="category">Category:</label>
+                <select id="category" name="category" required class="form-input">
+                    <option value="3DModel">3D Model</option>
+                    <option value="Code">Code</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-input-group">
+                <label for="idea">Idea:</label>
+                <textarea name="idea" id="idea" rows="10" cols="30" required class="form-input">Type your idea here</textarea>
+            </div>
+            <button type="submit" class="form-btn">Submit</button>
+        </form>
+    </section>
+    <script src="./secret/authKey.js"></script>
+    <script src="./src/ideaSubmission.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+
+* {
+  box-sizing: border-box;
+  font-family: Raleway;
+  color: #444;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #ddd;
+}
+
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+  padding: .5em;
+  color:white;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.main-nav li{
+  padding: 0 5%;
+}
+
+.main-header {
+  padding-bottom: 30px;
+  background-color: orange;
+}
+
+.title-name {
+  text-align: center;
+  margin: 0;
+  font-size: 5em;
+  font-family: 'Major Mono Display';
+}
+
+.container {
+  width: 400px;
+  max-width: 400px;
+  margin: 1rem auto;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, .2);
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.section-header {
+  font-size: 2.5em;
+  color:#333;
+  text-align: center;
+}
+
+.container,
+.form-input,
+.form-btn {
+  font: 500 1rem;
+}
+
+.form-hidden {
+  display: none;
+}
+
+.form > *:first-child{
+  margin-top: 0;
+}
+
+.form > *:last-child{
+  margin-bottom: 0;
+}
+
+.form-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form-message{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-message-success{
+  color: green;
+}
+
+.form-message-error{
+  color: red;
+}
+
+.form-input-group {
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: .75rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  outline: none;
+  background: #eee;
+  transition: background .2s, border-color .2s;
+}
+
+.form-input:focus {
+  border-color: gold;
+  background: #fff;
+}
+
+.form-input-error {
+  color: red;
+  border-color: red;
+}
+
+.form-input-error-message {
+  margin-top: .5rem;
+  font-size: .85rem;
+  color: red;
+}
+
+.form-btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background: gold;
+}
+
+.form-btn:hover {
+  background-color: darkgoldenrod;
+}
+
+.form-btn:active {
+  transform: scale(.98);
+}
+
+.form-text {
+  text-align: center;
+}
+
+.form-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-link:hover {
+  text-decoration: underline;
+}
