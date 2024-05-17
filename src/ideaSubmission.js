@@ -9,7 +9,7 @@ document.getElementById('ideaForm').addEventListener('submit', function(event) {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ idea, category/*, authKey*/ }),
+        body: JSON.stringify({ idea, category }),
     })
     .then(response => response.json())
     .then(data => {
