@@ -4,7 +4,7 @@ document.getElementById('ideaForm').addEventListener('submit', function(event) {
     const idea = document.getElementById('idea').value;
     const category = document.getElementById('category').value;
 
-    fetch('https://china-extra.gl.at.ply.gg:55053/add-idea', {
+    fetch('http://china-extra.gl.at.ply.gg:55053/add-idea', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
