@@ -27,6 +27,10 @@
                     <option value="Other">Other</option>
                 </select>
             </div>
+            <div class="form-input-group" id="subCategoryGroup" style="display: none;">
+                <label for="subCategory">Sub-Category:</label>
+                <input type="text" id="subCategory" name="subCategory" class="form-input">
+            </div>
             <div class="form-input-group">
                 <label for="idea">Idea:</label>
                 <textarea name="idea" id="idea" rows="10" cols="30" required class="form-input">Type your idea here</textarea>
@@ -34,7 +38,11 @@
             <button type="submit" class="form-btn">Submit</button>
         </form>
     </section>
-    <!-- <script src="./secret/authKey.js"></script> -->
+    <section class="content-section container">
+        <button id="getIdeaBtn" class="form-btn">Get Random Idea</button>
+        <label for="ideaDisplay"> </label>
+        <div id="ideaDisplay" class="idea-display form-input"></div>
+    </section>
     <script src="./src/ideaSubmission.js"></script>
 </body>
 </html>
